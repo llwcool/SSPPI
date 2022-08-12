@@ -1,7 +1,6 @@
 import os.path
 import paddle
 from MyNet import MyNet
-from draw import draw_process
 import numpy as np
 import math
 def getevalute(label, site):
@@ -145,8 +144,6 @@ class runNet():
         else:
             return mcc1
 
-        # draw_process("trainning loss", "red", Iters, total_loss, "trainning loss")
-        # draw_process("trainning acc", "green", Iters, total_acc, "trainning acc")
 
     def evalue(self,pdb_eval_id, label, site):
         '''
