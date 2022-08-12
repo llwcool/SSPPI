@@ -284,15 +284,3 @@ def Legitimacy_check( dict_pdb, dict_seq):
         for i in range(len(list_eval)):
             f.write(list_eval[i])
 
-
-
-#生成非法数据集列表
-'''
-dict_seq, dict_pdb = getdict()
-print(dict_pdb)
-#Legitimacy_check(dict_pdb, dict_seq)
-for pdb in open('data/eval.txt'):
-    label = dict_seq.get(pdb.strip())
-    print('>'+pdb.strip())
-    print(label)
-'''
